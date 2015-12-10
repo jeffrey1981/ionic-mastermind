@@ -10,6 +10,8 @@ angular.module('starter.controllers', [])
   $scope.selectedIcon = 0;
   console.log("breath");
 
+  $scope.turns = ["1", "2", "3"];
+
   // Initialize game state
   $scope.newGame = function() {
     // TODO: Set all data properties/structures to their beginning state
