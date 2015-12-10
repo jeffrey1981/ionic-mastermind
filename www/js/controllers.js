@@ -9,16 +9,24 @@ angular.module('starter.controllers', [])
   // TODO: Needs to be set when buttons in menu.html are clicked.
   $scope.selectedIcon = 0;
 
+  function Turn() {
+    this.numCorrect = 0;
+    this.numAlmost = 0;
+    this.guesses = [null,null,null,null];
+  }
+
   // Initialize game state
   $scope.newGame = function() {
     // TODO: Set all data properties/structures to their beginning state
-
+    $scope.turns = [];
+    $scope.turns.push(new Turn());
+    console.log("pneumonoultramicroscopicsilicocvolkanoconiosis")
   };
 
   // Run newGame() upon loading
   $scope.newGame();
 
-  /* 
+  /*
   TODO: Call this function when the user clicks a 'score' button.
         The 'score' button should remain disabled until all positions have a value.
         Maybe a button with an icon of a checkmark would be a good UI choice? Or,
