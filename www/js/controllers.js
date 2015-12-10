@@ -8,17 +8,18 @@ angular.module('starter.controllers', [])
   // The current selected icon to assign to any clicked position.
   // TODO: Needs to be set when buttons in menu.html are clicked.
   $scope.selectedIcon = 0;
+  console.log("breath");
 
   // Initialize game state
   $scope.newGame = function() {
     // TODO: Set all data properties/structures to their beginning state
-
+    console.log("pneumonoultramicroscopicsilicocvolkanoconiosis")
   };
 
   // Run newGame() upon loading
   $scope.newGame();
 
-  /* 
+  /*
   TODO: Call this function when the user clicks a 'score' button.
         The 'score' button should remain disabled until all positions have a value.
         Maybe a button with an icon of a checkmark would be a good UI choice? Or,
