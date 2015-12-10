@@ -8,13 +8,18 @@ angular.module('starter.controllers', [])
   // The current selected icon to assign to any clicked position.
   // TODO: Needs to be set when buttons in menu.html are clicked.
   $scope.selectedIcon = 0;
-  console.log("breath");
 
-  $scope.turns = ["1", "2", "3"];
+  function Turn() {
+    this.numCorrect = 0;
+    this.numAlmost = 0;
+    this.guesses = [null,null,null,null];
+  }
 
   // Initialize game state
   $scope.newGame = function() {
     // TODO: Set all data properties/structures to their beginning state
+    $scope.turns = [];
+    $scope.turns.push(new Turn());
     console.log("pneumonoultramicroscopicsilicocvolkanoconiosis")
   };
 
